@@ -1,0 +1,16 @@
+{
+    "shop-1": {
+        "name": "Coffee Shop",
+        "description": "Добро пожаловать!",
+        "2gis": "https://2gis.ru/",
+        "yandex": "https://yandex.ru/maps/",
+        "google": "https://maps.google.com/"
+    },
+    "shop-2": {
+        "name": "Clothing Store",
+        "description": "Наш магазин одежды",
+        "2gis": "https://2gis.ru/",
+        "yandex": "https://yandex.ru/maps/",
+        "google": "https://maps.google.com/"
+    }
+}
