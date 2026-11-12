@@ -1,16 +1,34 @@
-
 {
     "MamaMai": {
         "logo": "images/mamamai.png",
-        "menu": "https://mamamai-cafe.ru/",
-        "review": "https://yandex.ru/maps/org/115688717218?si=tr51wrvqwf0z9zp84cjxv9v7e8"
+        "buttons": [
+            {
+                "text": "Меню",
+                "url": "https://mamamai-cafe.ru/"
+            },
+            {
+                "text": "Оставить отзыв",
+                "url": "https://example.com/review"
+            }
+        ]
     },
-    "shop-2": {
-        "name": "Clothing Store",
-        "description": "Наш магазин одежды",
-        "2gis": "https://2gis.ru/",
-        "review": "https://yandex.ru/maps/",
-        "google": "https://maps.google.com/",
-        "menu": ""
+
+    "shop2": {
+        "title": "Магазин одежды",
+        "buttons": [
+            {
+                "text": "Наш сайт",
+                "url": "https://example.com"
+            },
+            {
+                "text": "Мы на картах",
+                "url": "https://yandex.ru/maps/"
+            }
+        ]
+    },
+
+    "shop3": {
+        "title": "Полезная информация",
+        "description": "Добро пожаловать!"
     }
 }
