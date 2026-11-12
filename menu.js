@@ -86,8 +86,8 @@ async function loadShop() {
         }
 
     } catch (error) {
-        console.error(error);
-        page.textContent = "Не удалось загрузить страницу";
+    console.error("Ошибка:", error);
+    page.textContent = "Ошибка: " + error.message;
     }
 }
 
