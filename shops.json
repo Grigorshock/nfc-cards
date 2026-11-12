@@ -3,13 +3,13 @@
     "MamaMai": {
         "logo": "images/mamamai.png",
         "menu": "https://mamamai-cafe.ru/",
-        "yandex": "https://yandex.ru/maps/org/115688717218?si=tr51wrvqwf0z9zp84cjxv9v7e8"
+        "review": "https://yandex.ru/maps/org/115688717218?si=tr51wrvqwf0z9zp84cjxv9v7e8"
     },
     "shop-2": {
         "name": "Clothing Store",
         "description": "Наш магазин одежды",
         "2gis": "https://2gis.ru/",
-        "yandex": "https://yandex.ru/maps/",
+        "review": "https://yandex.ru/maps/",
         "google": "https://maps.google.com/",
         "menu": ""
     }
