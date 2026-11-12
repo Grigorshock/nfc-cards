@@ -6,12 +6,14 @@
             {
                 "text": "Меню",
                 "url": "https://mamamai-cafe.ru/",
-                "color": "#2878D0"
+                "color": "#2878D0",
+                "textColor": "#FFFFFF"
             },
             {
                 "text": "Оставить отзыв",
                 "url": "https://example.com/review",
-                "color": "#E53935"
+                "color": "#E53935",
+                "textColor": "#FFFFFF"
             }
         ]
     },
