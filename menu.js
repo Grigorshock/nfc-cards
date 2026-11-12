@@ -4,7 +4,9 @@ async function loadShop() {
     const shopId = params.get("shop") || "shop1";
 
     try {
-        const response = await fetch("shops.json");
+        const response = await fetch("shops.json?v=2", {
+        cache: "no-store"
+        });
         if (!response.ok) throw new Error("Не удалось загрузить shops.json");
 
         const shops = await response.json();
