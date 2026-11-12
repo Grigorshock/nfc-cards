@@ -1,44 +1,53 @@
 
-async function loadShop() {
-    const params = new URLSearchParams(window.location.search);
-    const shopId = params.get("shop") || "shop1";
+const params = new URLSearchParams(window.location.search);
+const shopId = params.get("shop");
 
+async function loadShop() {
     try {
-        const response = await fetch("shops.json?v=2", {
-        cache: "no-store"
+        const response = await fetch("shops.json?v=3", {
+            cache: "no-store"
         });
-        if (!response.ok) throw new Error("Не удалось загрузить shops.json");
+
+        if (!response.ok) {
+            throw new Error("Не удалось загрузить shops.json");
+        }
 
         const shops = await response.json();
         const shop = shops[shopId];
 
         if (!shop) {
-            document.getElementById("shop-name").textContent = "Магазин не найден";
-            document.getElementById("shop-description").textContent =
-                "Проверьте ссылку на страницу.";
-            document.querySelector(".actions").hidden = true;
-            return;
+            throw new Error("Магазин не найден");
         }
 
-        document.title = shop.name || "Магазин";
-        document.getElementById("shop-name").textContent = shop.name || "Магазин";
-        document.getElementById("shop-description").textContent =
-            shop.description || "";
+        // Логотип
+        const logo = document.getElementById("shop-logo");
 
-        const yandexLink = document.getElementById("link-yandex");
-        yandexLink.href = shop.yandex || "#";
-        if (!shop.yandex) yandexLink.hidden = true;
+        if (shop.logo) {
+            logo.src = shop.logo;
+            logo.hidden = false;
 
+            logo.onerror = () => {
+                logo.hidden = true;
+            };
+        }
+
+        // Кнопка меню
         const menuLink = document.getElementById("link-menu");
+
         if (shop.menu && shop.menu.trim()) {
             menuLink.href = shop.menu;
-        } else {
-            menuLink.hidden = true;
+            menuLink.hidden = false;
         }
+
+        // Кнопка отзыва
+        const reviewLink = document.getElementById("link-review");
+
+        if (shop.review && shop.review.trim()) {
+            reviewLink.href = shop.review;
+            reviewLink.hidden = false;
+        }
+
     } catch (error) {
-        document.getElementById("shop-name").textContent = "Ошибка загрузки";
-        document.getElementById("shop-description").textContent =
-            "Не удалось загрузить данные магазина.";
         console.error(error);
     }
 }
