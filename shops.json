@@ -1,16 +1,16 @@
+
 {
-    "shop1": {
-        "name": "Эстет Тату",
-        "description": "Добро пожаловать!",
-        "2gis": "https://2gis.ru/",
-        "yandex": "https://yandex.ru/maps/213/moscow/?from=tableau_yabro&ll=37.306132%2C55.622780&mode=poi&poi%5Bpoint%5D=37.306308%2C55.622356&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D236508269690%26yclid%3D11155972686966947839&z=17.36",
-        "google": "https://maps.google.com/"
+    "MamaMai": {
+        "name": "MamaMai",
+        "yandex": "https://yandex.ru/maps/org/115688717218?si=tr51wrvqwf0z9zp84cjxv9v7e8",
+        "Меню": "https://mamamai-cafe.ru/"
     },
     "shop-2": {
         "name": "Clothing Store",
         "description": "Наш магазин одежды",
         "2gis": "https://2gis.ru/",
         "yandex": "https://yandex.ru/maps/",
-        "google": "https://maps.google.com/"
+        "google": "https://maps.google.com/",
+        "menu": ""
     }
 }
