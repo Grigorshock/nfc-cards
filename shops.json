@@ -5,14 +5,17 @@
         "buttons": [
             {
                 "text": "Меню",
-                "url": "https://mamamai-cafe.ru/"
+                "url": "https://mamamai-cafe.ru/",
+                "color": "#2878D0"
             },
             {
                 "text": "Оставить отзыв",
-                "url": "https://yandex.ru/maps/org/115688717218?si=tr51wrvqwf0z9zp84cjxv9v7e8"
+                "url": "https://example.com/review",
+                "color": "#E53935"
             }
         ]
-    },
+    }
+},
 
     "shop2": {
         "title": "Магазин одежды",
