@@ -1,3 +1,4 @@
+
 {
     "MamaMai": {
         "logo": "images/mamamai.png",
@@ -15,20 +16,21 @@
 
     "shop2": {
         "title": "Магазин одежды",
+        "description": "Добро пожаловать в наш магазин!",
         "buttons": [
             {
                 "text": "Наш сайт",
                 "url": "https://example.com"
             },
             {
-                "text": "Мы на картах",
+                "text": "Мы на Яндекс Картах",
                 "url": "https://yandex.ru/maps/"
             }
         ]
     },
 
     "shop3": {
-        "title": "Полезная информация",
-        "description": "Добро пожаловать!"
+        "title": "Информация",
+        "description": "Здесь пока нет кнопок"
     }
 }
