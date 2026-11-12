@@ -1,9 +1,9 @@
 
 {
     "MamaMai": {
-        "name": "MamaMai",
-        "yandex": "https://yandex.ru/maps/org/115688717218?si=tr51wrvqwf0z9zp84cjxv9v7e8",
-        "menu": "https://mamamai-cafe.ru/"
+        "logo": "images/mamamai.png",
+        "menu": "https://mamamai-cafe.ru/",
+        "yandex": "https://yandex.ru/maps/org/115688717218?si=tr51wrvqwf0z9zp84cjxv9v7e8"
     },
     "shop-2": {
         "name": "Clothing Store",
